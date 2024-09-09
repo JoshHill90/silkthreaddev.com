@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="/src/css/main.css">
+	<link rel="stylesheet" href="/src/css/color.css">
+	<link rel="stylesheet" href="/src/css/nav.css">
+	<link rel="stylesheet" href="/src/css/btn.css">
+	<link rel="stylesheet" href="/src/css/loading.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Silk Thread Dev</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div id="sideNav">
+			<div id="sideNaveRow" class="row text-center">
+				<div class="col-12">
+					<div class="top-nav">
+						<input id="checkbox2" type="checkbox">
+						<label class="toggle-btn toggle toggle2" for="checkbox2">
+							<div id="bar4" class="bars"></div>
+							<div id="bar5" class="bars"></div>
+							<div id="bar6" class="bars"></div>
+						</label>
+					</div>
+				</div>
+
+				<!--        			      		 	-->
+				<!-- 	Dynamic Nav button location 	-->
+				<!--                					-->
+
+			</div>
+
+		</div>
+
+		<!--        				      		 	-->
+		<!-- 	Dynamic Sub Nav buttons location 	-->
+		<!--                						-->
+		<div id="subNavObj" class="sub-nav">
+		</div>
+		<!--        				      		 	-->
+		<!-- 	Main Content location 				-->
+		<!--                						-->
+		<div id="mainContent" class="main-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 mb-4">
+
+						<!--        				       	-->
+						<!-- 	Main Content location 		-->
+						<!--                				-->
+						<div class="accordion" id="accordionClient">
+							<!--        				       	-->
+							<!-- 	New Client Collapse 		-->
+							<!--                				-->
+							<div id="newClient" class="accordion-collapse collapse" data-bs-parent="#accordionClient">
+								<div class="accordion-body">
+
+
+									<div class="form-container section-form">
+										<button class="btn-cust-icon close-accordion-btn">
+											<i class="fa-solid fa-circle-xmark"></i>
+										</button>
+										<form>
+											<!-- First Name Field -->
+											<div class="mb-3">
+												<label for="firstName" class="form-label">First Name</label>
+												<input type="text" class="form-control" id="firstName">
+											</div>
+
+											<!-- Last Name Field -->
+											<div class="mb-3">
+												<label for="lastName" class="form-label">Last Name</label>
+												<input type="text" class="form-control" id="lastName">
+											</div>
+
+											<!-- Client Email Field -->
+											<div class="mb-3">
+												<label for="clientEmail" class="form-label">Email</label>
+												<input type="email" class="form-control" id="clientEmail">
+											</div>
+
+											<!-- Client Phone Field -->
+											<div class="mb-3">
+												<label for="clientPhone" class="form-label">Phone</label>
+												<input type="tel" class="form-control" id="clientPhone">
+											</div>
+										</form>
+										<button id="newClientBtn" class="btn-cust-2">
+											Create
+										</button>
+									</div>
+
+								</div>
+							</div>
+
+							<!--        				      	 	-->
+							<!-- 	New Client Domain Collapse 		-->
+							<!--                					-->
+							<div id="newClientDomain" class="accordion-collapse collapse"
+								data-bs-parent="#accordionClient">
+								<div class="accordion-body">
+									<div class="form-container section-form section-form">
+										<button class="btn-cust-icon close-accordion-btn">
+											<i class="fa-solid fa-circle-xmark"></i>
+										</button>
+										<form>
+											<!-- Select field with no options -->
+											<div class="mb-3">
+												<label for="clientSelectFeild" class="form-label">Select Client</label>
+												<select class="form-select" id="clientSelectFeild">
+													<!-- No options added here -->
+												</select>
+											</div>
+
+											<!-- Field to enter a domain name -->
+											<div class="mb-3">
+												<label for="domainName" class="form-label">Domain Name</label>
+												<input type="text" class="form-control" id="domainName"
+													placeholder="Enter domain name">
+											</div>
+
+											<!-- Select field for domain extensions -->
+											<div class="mb-3">
+												<label for="domainExtension" class="form-label">Domain Extension</label>
+												<select class="form-select" id="domainExtension">
+													<option value="com">.com</option>
+													<option value="net">.net</option>
+													<option value="org">.org</option>
+													<option value="online">.online</option>
+													<option value="cloud">.cloud</option>
+													<option value="co">.co</option>
+												</select>
+											</div>
+										</form>
+										<button id="createNewClientBtn" class="btn-cust-2">
+											Add Domain
+										</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!--        			  	 	-->
+				<!-- 	Main Client list 		-->
+				<!--                			-->
+				<div class="col-12 mb-4">
+					<h1 class="h1-n">
+						Clients Dash Board
+					</h1>
+				</div>
+			</div>
+			<div class="adminContent">
+				<div class="row">
+					<div class="col-12 ">
+						<div id="clientSection" class="section-card">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--               -->
+		<!--	Modals	   -->
+		<!--               -->
+
+		<div class="modal fade" id="ClientDetailsModal" tabindex="-1" aria-labelledby="ClientDetailsModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content modal-top">
+					<div class="modal-header border-0">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body border-0">
+						<div class="row">
+							<!-- Column for Client Info and Client Domains Keys and Values -->
+							<div class="col-12 col-md-6">
+								<div class="row">
+									<!-- Column for Client Info -->
+									<div class="col-12 mb-3">
+										<!-- Column for Client Domains Keys and Values -->
+										<div class="collapse" id="keyValuesCollapse">
+											<p class="p-n">Client Domains Keys and Values</p>
+											<div class="section-card">
+												<div id="keyValueElm" class="row">
+													<!-- Content for Client Domains Keys and Values -->
+
+												</div>
+											</div>
+											<button id="updateDomainValuesBtn" class="btn-cust-2 mt-4 mb-4 w-100">
+												Update Domain Values
+											</button>
+										</div>
+										<p class="p-n">Client Info</p>
+
+										<div class="section-card">
+											<div id="clientContactElm" class="row">
+												<!-- Content for Client contact infomration -->
+
+											</div>
+										</div>
+										<button id="clientInfoBtn" class="btn-cust-2 mt-4 w-100">
+											Update Client Info
+										</button>
+									</div>
+								</div>
+							</div>
+							<!-- Column for Client Domains -->
+							<div class="col-12 col-md-6">
+								<p class="p-n">Client Domains</p>
+								<div id="clientDomains" class="section-card-long row">
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!--                    -->
+	<!-- JavaScript Imports -->
+	<!--                    -->
+
+	<script type="module" src="/src/js/main.js"></script>
+	<script type="module" src="/src/js//client/client.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+.bsa-content-block {
+	border-radius: 50% 30px 50% 30px;
+	position: relative;
+	padding: 15px;
+	background-color: var(--lg-7)
+}
+
+.hero-baaa {
+	min-height: 60vh;
+}
+
+.block-baaa {
+	padding-top: 20vh;
+	min-height: 80vh;
+}
+
+.need-automation-block {
+	border-radius: 8px;
+	position: relative;
+	padding: 28px 12px 28px 12px;
+	max-width: 700px;
+	left: 20%;
+	background-color: var(--mc-4)
+}
+
+.automation-tools {
+	box-shadow: inset 5px 5px 10px #5050506e,
+		inset -5px -5px 10px #20202073;
+	height: 350px;
+	position: relative;
+	left: 60px;
+	border-radius: 10px;
+}
+
+.looking-for-saas-tools {
+
+	height: 350px;
+	position: relative;
+	left: 60px;
+	border-radius: 10px;
+}
+
+.SAAS-in-a-box {
+	background-image: url('/site/images/baaa/BAAA1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 80%;
+	border-radius: 15px;
+	box-shadow: inset 10px 10px 30px #00000062,
+		inset -10px -10px 30px #ffffff4b;
+	position: relative;
+}
+
+.SAAS-in-a-box div {
+	height: 100%;
+	background-image: url('/site/images/baaa/BAAA2.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	transform: translate(0, 0);
+	animation: moveBackground 3s infinite;
+}
+
+
+@keyframes moveBackground {
+	0% {
+		transform: translateY(0);
+	}
+
+
+	50.3% {
+		transform: translateY(4px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.Saas-tools {
+	box-shadow: 7px 7px 5px #2e2e2e69;
+	height: 350px;
+	position: relative;
+	left: 60px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.067);
+}
+
+
+.carousel-container {
+	border-radius: 30px;
+	position: relative;
+	margin: auto;
+	overflow: hidden;
+	width: 90%;
+	box-shadow: inset 7px -7px 5px #02020262,
+		inset -7px 7px 5px #00000062;
+}
+
+.carousel {
+	position: relative;
+	height: 500px;
+}
+
+.carousel img {
+	position: absolute;
+	width: 100%;
+}
+
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+	.bsa-content-block {
+		border-radius: 15px;
+		position: relative;
+		padding: 10px;
+	}
+
+	.carousel {
+		position: relative;
+		height: 40vh;
+	}
+
+	.carousel img {
+		position: absolute;
+		height: 40vh;
+		width: auto;
+	}
+
+	.need-automation-block {
+		left: 0;
+	}
+
+	.automation-tools {
+		left: 0;
+	}
+
+	.Saas-tools {
+		left: 0;
+	}
+
+	.SAAS-in-a-box {
+		position: relative;
+		height: 300px;
+		left: 0;
+		top: 0;
+	}
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+
+	.SAAS-in-a-box {
+		position: relative;
+		height: 300px;
+		left: 0;
+		top: 0;
+	}
+
+	.bsa-content-block {
+		border-radius: 15px;
+		position: relative;
+		padding: 10px;
+	}
+
+	.Saas-tools {
+		left: -60px;
+	}
+
+	.carousel {
+		position: relative;
+		height: 40vh;
+	}
+
+	.looking-for-saas-tools {
+
+		height: 350px;
+		position: relative;
+		left: 0;
+		border-radius: 10px;
+	}
+
+	.need-automation-block {
+		left: 0;
+	}
+}

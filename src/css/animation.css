@@ -1,0 +1,25 @@
+.left-slide {
+
+	transform: translateX(-50%);
+	transition: transform .8s;
+}
+
+.right-slide {
+
+	transform: translateX(50%);
+	transition: transform .8s;
+}
+
+.up-slide {
+	transform: translateY(50px);
+	transition: transform .8s;
+}
+
+.hide {
+	opacity: .5;
+}
+
+.show {
+	transform: translateY(0);
+	opacity: 1;
+}

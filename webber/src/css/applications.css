@@ -1,0 +1,36 @@
+.app-card {
+	padding: 25px;
+	border-radius: 12px;
+	position: relative;
+	height: 300px;
+	color: var(--bg-1) !important;
+	background-image: var(--bg-gradient-color-dk);
+	overflow: hidden;
+	z-index: 1;
+	box-shadow: -7px 7px 6px var(--bg-2-op),
+		7px -7px 6px var(--bg-6-op);
+}
+
+.app-task-webber {
+	height: 300px;
+	width: 100%;
+	opacity: .6;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
+	background-size: 80%;
+	top: -25%;
+	filter: blur(1px);
+	z-index: -1;
+	background-image: url(https://imagedelivery.net/4_y5kVkw2ENjgzV454LjcQ/63e6dd1f-5225-4ca4-9f7c-9700ba64e300/icon);
+}
+
+.app-text {
+	background-color: var(--bg-2-op);
+	z-index: 1;
+	padding: 5px;
+}
+
+.app-card:hover {
+	background-image: var(--bg-gradient-color);
+}

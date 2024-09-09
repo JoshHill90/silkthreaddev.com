@@ -1,0 +1,62 @@
+.parallelogram {
+  border-radius: 50%;
+  position: absolute;
+  padding: 30px;
+  height: 600px;
+  width: 600px;
+  z-index: 0;
+  background: var(--mc-7);
+}
+
+.circleHolder {
+  position: absolute;
+  bottom: 15%;
+}
+
+.circle {
+  position: absolute;
+  background-color: var(--mc-5);
+  border-radius: 50%;
+}
+
+.svg-holder {
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .parallelogram {
+    top: 20%;
+    padding: 15px;
+    height: 350px;
+    width: 350px;
+    left: 0%;
+  }
+
+  .circleHolder {
+    position: absolute;
+    bottom: 5%;
+  }
+
+  .svg-holder {
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .parallelogram {
+    top: 10%;
+    height: 300px;
+    width: 300px;
+
+  }
+
+  .circleHolder {
+    position: relative;
+    top: 60vh;
+  }
+}

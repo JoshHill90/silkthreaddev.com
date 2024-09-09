@@ -1,0 +1,358 @@
+#index1 {
+	overflow: hidden;
+	min-height: 100vh;
+}
+
+#index3 {
+	min-height: 100vh;
+}
+
+
+.index-window {
+	height: 90vh;
+	padding: 15px;
+}
+
+.index-content {
+	height: 60vh;
+	position: relative;
+	padding: 10px;
+}
+
+.index-content-top {
+	height: 60vh;
+	position: relative;
+	padding: 100px 10px;
+}
+
+.bg-set {
+	background-color: var(--bg-6) !important;
+}
+
+@keyframes moveBackground {
+	0% {
+		background-position: center;
+	}
+
+	15.6% {
+		background-position: -6px center;
+	}
+
+	30.3% {
+		background-position: -6px 12px;
+	}
+
+	45.6% {
+		background-position: center 12px;
+	}
+
+	60.3% {
+		background-position: center -16px;
+	}
+
+	75.6% {
+		background-position: 8px -16px;
+	}
+
+	100% {
+		background-position: center;
+	}
+}
+
+.image-block-1 {
+	background-image: url('/site/images/site-content/application\ wall.png');
+	background-size: 125%;
+	height: 600px;
+	width: 600px;
+	overflow: hidden;
+	border-radius: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: moveBackground 8s infinite;
+}
+
+.app-development {
+	background-image: url('/site/images/index-set/4.png');
+	background-size: contain;
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.web-products-1 {
+	position: relative;
+	display: block;
+	min-height: 600px;
+	background-color: var(--bg-7);
+	border-radius: 30px;
+	padding: 10px;
+	border: 1px solid var(--mc-4);
+}
+
+.web-products-2 {
+	background-color: var(--bg-7);
+	border-radius: 30px;
+	padding: 15px 15px;
+	border: 1px solid var(--mc-4);
+}
+
+.web-products-top-1 {
+	position: relative;
+	overflow: hidden;
+	height: 50%;
+	max-height: 300px;
+	border-radius: 22px 22px 0 0;
+	padding: 25px 5px;
+	background-color: var(--sc-3);
+
+}
+
+.web-products-side-1 {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	border-radius: 0 22px 22px 0;
+	padding: 25px;
+	background-color: var(--sc-3);
+
+}
+
+.contact-form {
+	padding: 15px;
+	position: relative;
+	background-color: var(--bgop-6);
+	width: 45%;
+	height: 100%;
+	left: 15%;
+}
+
+.hero-content {
+	position: relative;
+}
+
+.hero-textbox {
+	top: 50%;
+	position: relative;
+}
+
+.bottom-box {
+	position: absolute;
+	display: block;
+	left: 35%;
+	bottom: 10%;
+}
+
+.image-index-container {
+	position: relative;
+	height: 60vh;
+}
+
+.index-image {
+	position: absolute;
+	max-height: 30%;
+}
+
+.index-image2 {
+	left: 50%;
+	top: 15%;
+}
+
+.index-image1 {
+	left: 40%;
+	top: 30%;
+}
+
+.index-image3 {
+	left: 55%;
+	top: 45%;
+}
+
+.webDevCard {
+	z-index: 0;
+	position: absolute;
+	background-image: url('/site/images/site-content/content.png');
+	background-size: contain;
+	width: 100%;
+	left: -15%;
+	top: 43%;
+	height: 25vh;
+	opacity: .2;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.appAndAuto {
+	z-index: 0;
+	position: absolute;
+	background-image: url('/site/images/site-content/automation\ on\ pc.png');
+	background-size: contain;
+	width: 100%;
+	left: -15%;
+	top: 23%;
+	height: 25vh;
+	opacity: .2;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.hostingSer {
+	z-index: 0;
+	position: absolute;
+	background-image: url('/site/images/site-content/the\ cloud.png');
+	background-size: contain;
+	width: 100%;
+	left: -15%;
+	top: 23%;
+	height: 35vh;
+	opacity: .2;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.photoManagerSite {
+	z-index: 0;
+	position: absolute;
+	background-image: url('/site/images/site-content/pc\ site\ 1.png');
+	background-size: contain;
+	width: 100%;
+	left: 20%;
+	top: 0%;
+	height: 35vh;
+	opacity: .2;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.index-body {
+	position: relative;
+	background-color: var(--bg-7);
+	border-radius: 25% 25% 0 0;
+}
+
+.index2 {
+	min-height: 100vh;
+	position: relative;
+	left: 20%;
+	max-width: 60%;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+	.hero-textbox {
+		top: 30%;
+		position: relative;
+	}
+
+	.index-body {
+		top: -80px;
+		position: relative;
+		margin: auto;
+		background-color: var(--bg-7);
+		border-radius: 30PX;
+	}
+
+	.image-block-1 {
+		background-image: url('/site/images/site-content/application\ wall.png');
+		background-size: 125%;
+		height: 350px;
+		width: 350px;
+
+		border-radius: 50%;
+
+	}
+
+	.web-products-side-1 {
+		height: 50%;
+		height: 300px;
+		border-radius: 22px 22px 0 0;
+		padding: 25px 5px;
+	}
+
+	.photoManagerSite {
+
+		left: 20%;
+		top: 13%;
+
+	}
+
+	.index2 {
+		left: 0;
+		max-width: 98%;
+		position: relative;
+		margin: auto;
+	}
+
+	#index1 {
+		overflow: hidden;
+		min-height: none;
+	}
+
+	#index3 {
+		min-height: none;
+	}
+
+	.image-block-1 {
+		margin: auto;
+		height: 30vh;
+		width: 30vh;
+		position: relative;
+
+	}
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+	.index-body {
+		top: -80px;
+		position: relative;
+		margin: auto;
+		background-color: var(--bg-7);
+		border-radius: 30PX;
+	}
+
+	.appAndAuto {
+
+		width: 100%;
+		left: -15%;
+		top: 23%;
+		height: 60vh;
+
+	}
+
+	.hostingSer {
+
+		width: 100%;
+		left: -15%;
+		top: 23%;
+		height: 80vh;
+
+	}
+
+	.image-block-1 {
+		margin: auto;
+		height: 50vh;
+		width: 50vh;
+		position: relative;
+
+	}
+
+	#index1 {
+		overflow: hidden;
+		min-height: none;
+	}
+
+	.webDevCard {
+
+		width: 100%;
+		left: 10px;
+		top: 0%;
+		height: 80vh;
+
+	}
+
+	.hero-textbox {
+		top: 10%;
+		position: relative;
+	}
+
+}

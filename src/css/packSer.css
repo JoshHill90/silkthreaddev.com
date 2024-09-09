@@ -1,0 +1,133 @@
+.ps-hero {
+	position: relative;
+	min-height: 100vh;
+	width: 100%;
+
+}
+
+.image-block-webDev {
+	position: absolute;
+	background-size: contain;
+	height: 100%;
+	left: 40%;
+}
+
+.image-block-webDev-2 {
+	position: absolute;
+	background-size: fill;
+	height: 40%;
+	left: -85%;
+	border-radius: 15px;
+}
+
+.image-block-webDev-3 {
+	position: absolute;
+	background-size: fill;
+	width: 75%;
+	top: 25%;
+	left: -30%;
+	z-index: 1;
+	border-radius: 15px;
+}
+
+.image-block-webDev-4 {
+	position: absolute;
+	background-size: fill;
+	width: 85%;
+	top: 15%;
+	left: 10%;
+	z-index: 1;
+	border-radius: 15px;
+}
+
+.image-block-webDev-cont-2 {
+	position: relative;
+	height: 100vh;
+}
+
+.web-dev-hero {
+	position: relative;
+	top: 20vh;
+}
+
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+	.ps-hero {
+		min-height: none;
+	}
+
+	.web-dev-hero {
+		position: relative;
+		top: 0;
+	}
+
+	.image-block-webDev {
+		height: auto;
+		width: 100%;
+		left: 0;
+	}
+
+	.image-block-webDev-2 {
+		height: 30%;
+		left: -80%;
+		top: 10%;
+	}
+
+	.image-block-webDev-3 {
+		width: 80%;
+		top: 25%;
+		left: -30%;
+	}
+
+	.image-block-webDev-4 {
+		width: 80%;
+		top: 45%;
+		left: 0;
+	}
+
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+	.ps-hero {
+		min-height: 100%;
+	}
+
+	.web-dev-hero {
+		position: relative;
+		top: 0;
+		left: -30px;
+	}
+
+	.image-block-webDev-cont-2 {
+		position: relative;
+		height: 600px;
+	}
+
+	.image-block-webDev {
+		position: relative;
+		height: auto;
+		width: 100%;
+		left: 0;
+	}
+
+	.image-block-webDev-2 {
+		position: absolute;
+		height: 60%;
+		left: -60%;
+		top: 10%;
+	}
+
+	.image-block-webDev-3 {
+		position: absolute;
+		width: 50%;
+		top: 25%;
+		left: 60%;
+	}
+
+	.image-block-webDev-4 {
+		position: absolute;
+		width: 40%;
+		top: 45%;
+		left: 5%;
+	}
+}

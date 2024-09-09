@@ -1,0 +1,39 @@
+.btn-cust {
+	border-radius: 15px;
+	font-size: var(--p);
+	position: relative;
+	margin: auto;
+	padding: 1em 2.5em 1em 2.5em;
+	border: none;
+	color: var(--lg-2);
+	background: var(--mc-4);
+	transition: all 0.1s linear;
+	box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+}
+
+.btn-cust-2 {
+	border-radius: 15px;
+	font-size: var(--p);
+	position: relative;
+	margin: auto;
+	padding: 1em 2.5em 1em 2.5em;
+	border: none;
+	color: var(--lg-7);
+	background: var(--sc-4);
+	transition: all 0.1s linear;
+	box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+}
+
+.btn-cust:active,
+.btn-cust-2:active {
+	transform: scale(0.90);
+	color: var(--lg-1);
+	background: #ffffff2d;
+}
+
+.btn-cust:hover,
+.btn-cust-2:hover {
+	transition: all 1s;
+	color: var(--lg-1);
+	background: #ffffff2d;
+}

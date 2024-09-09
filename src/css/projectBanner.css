@@ -1,0 +1,91 @@
+.silk-manage-studio-banner {
+	background-color: var(--mc-6);
+	background-image: linear-gradient(
+		to left top, 
+		rgba(0, 0, 0, 0.8), 
+		rgba(25, 25, 25, 0.35)), 
+		url(/images/banners/silk-manage-studio-banner.png);
+}
+
+.threaded-calendar-banner {
+	background-color: var(--bg-5);
+	background-image: linear-gradient(
+		to left top, 
+		rgba(0, 0, 0, 0.8), 
+		rgba(25, 25, 25, 0.35)), 
+		url(/images/banners/threaded-calendar-banner.png);
+}
+
+.softsubversion-banner {
+	background-color: var(--bg-2);
+	background-image: linear-gradient(
+		to left top, 
+		rgba(0, 0, 0, 0.8), 
+		rgba(25, 25, 25, 0.35)), 
+		url(/images/banners/softsubversion-banner.png);
+}
+
+.silk-serve-banner {
+	background-color: var(--lg-2);
+	background-image: linear-gradient(
+		to left top, 
+		rgba(0, 0, 0, 0.8), 
+		rgba(25, 25, 25, 0.35)), 
+		url(/images/banners/silk-serve-banner.png);
+}
+
+.silk-serve-banner,
+.softsubversion-banner,
+.threaded-calendar-banner,
+.silk-manage-studio-banner {
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	height: 75vh;
+
+}
+
+.project-bar {
+	padding: 15px;
+	height: 12vh;
+	width: 100%;
+	background-color: var(--bg-4);
+}
+
+.project-card {
+	
+	height: 90vh;
+	width: 100%;
+	background-color: var(--bg-4);
+}
+
+.info-section {
+	position: relative;
+	margin: auto;
+	width: 80%;
+	height: 90%;
+	padding: 50px;
+	background-color: var(--mc-6);
+}
+
+.title-text {
+	padding: 15px;
+	width: 50%;
+	background-color: var(--bgop-6);
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+	.title-text {
+		width: 100%;
+		background-color: var(--bg-6);
+	}
+}
+
+.code-text {
+	background-color: var(--bg-6);
+	padding: 8px 15px 12px 15px;
+	width: 95%;
+	color: var(--sc-4)!important;
+}

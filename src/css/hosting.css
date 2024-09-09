@@ -1,0 +1,107 @@
+.hero-hosting {
+	position: relative;
+	min-height: 60vh;
+}
+
+.hero-hosting-text {
+	margin-top: 50px;
+	border-radius: 15px;
+	padding: 15px;
+	width: 100%;
+	background-color: var(--lg-7)
+}
+
+.img-hosting {
+	position: relative;
+	margin: auto;
+	width: 600px;
+	opacity: 1 !important;
+}
+
+.image-flip {
+	transform: scaleX(-1)
+}
+
+.hero-bottom {
+	position: relative;
+	min-height: 30vh;
+	margin-bottom: 50px;
+
+	padding: 15px;
+	width: 100%;
+	background-color: var(--lg-6)
+}
+
+.body-hosting {
+	padding-top: 10%;
+	position: relative;
+	min-height: 80vh;
+
+}
+
+.domain-and-email-management {
+
+	padding: 15px;
+	background-color: var(--mc-4-o);
+}
+
+.performance-and-security {
+
+	padding: 15px;
+	background-color: var(--lg-6-o);
+}
+
+.website-maintenance {
+
+	padding: 15px;
+	background-color: var(--sc-7-o);
+}
+
+.hosting-plans {
+
+	padding: 15px;
+	background-color: var(--lg-6);
+}
+
+.hosting-plans-top {
+	border-radius: 15px;
+	padding: 15px;
+	background-color: var(--sc-3);
+}
+
+.hosting-plans-card {
+	border: 1px solid var(--mc-4);
+
+	min-height: 200px;
+	border-radius: 15px;
+}
+
+.hosting-text-section {
+	opacity: 1 !important;
+	margin-top: 30%;
+}
+
+
+.arrow-icon {
+	color: var(--mc-4);
+	font-size: 2.5rem;
+	animation: pulse 3s ease-out;
+	animation-iteration-count: infinite;
+	cursor: pointer;
+
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 0.8;
+	}
+
+	50% {
+		opacity: 1;
+		transform: translateY(10px);
+	}
+
+	100% {
+		opacity: 0.8;
+	}
+}

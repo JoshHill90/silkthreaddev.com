@@ -1,0 +1,271 @@
+/*---------------------------------/
+	typography
+/---------------------------------*/
+
+@font-face {
+	font-family: 'Roboto Flex';
+	src: url('/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf') format('truetype');
+	font-weight: 100 900;
+	font-stretch: 75% 125%;
+	font-style: oblique 0deg 20deg;
+}
+
+.h1-n {
+	color: var(--bg-6);
+	font-size: 35px;
+	/* Adjusted from font-optical-sizing to font-size */
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: 1px;
+	font-variation-settings: "wdth" 89;
+}
+
+.h1-l {
+	color: var(--bg-1);
+	font-size: 35px;
+	/* Adjusted from font-optical-sizing to font-size */
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: 1px;
+	font-variation-settings: "wdth" 89;
+}
+
+.h2-l {
+	color: var(--mc-1);
+	font-size: 28px;
+	/* Adjusted from font-optical-sizing to font-size */
+	font-weight: 600;
+	font-style: normal;
+
+	font-variation-settings: "wdth" 72;
+}
+
+.h1-d {
+	color: var(--bg-7);
+	font-size: 35px;
+	/* Adjusted from font-optical-sizing to font-size */
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: 1px;
+	font-variation-settings: "wdth" 89;
+}
+
+.h1-b {
+	color: var(--mc-3);
+	font-size: 35px;
+	/* Adjusted from font-optical-sizing to font-size */
+	font-weight: 700;
+	font-style: bold;
+	letter-spacing: 1px;
+	font-variation-settings: "wdth" 89;
+}
+
+.p-lg {
+	color: var(--mc-5);
+	font-size: 16px;
+	/* Added a default font size */
+	font-weight: 330;
+	font-style: light;
+	font-variation-settings: "wdth" 100;
+}
+
+.p-l {
+	color: var(--sc-2);
+	font-size: 16px;
+	/* Added a default font size */
+	font-weight: 330;
+	font-style: light;
+	font-variation-settings: "wdth" 100;
+}
+
+.p-n {
+	color: var(--mc-7);
+	font-size: 16px;
+	/* Added a default font size */
+	font-weight: 550;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+
+.p-d {
+	color: var(--bg-1);
+	font-size: 16px;
+	/* Added a default font size */
+	font-weight: 550;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+
+.p-b {
+	color: var(--bg-6);
+	font-size: 16px;
+	/* Added a default font size */
+	font-weight: 550;
+	font-style: bold;
+	font-variation-settings: "wdth" 110;
+}
+
+.p-notice {
+	color: var(--bg-1);
+	font-size: 16px;
+	/* Added a default font size */
+	font-weight: 550;
+	font-style: bold;
+	font-variation-settings: "wdth" 110;
+}
+
+hr {
+	background-color: var(--mc-3) !important;
+}
+
+/*---------------------------------/
+    common styles
+/---------------------------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Flex', sans-serif;
+	background-color: var(--bg-7);
+	background-image: var(--bg-gradient-color);
+	display: block;
+	min-height: 100vh;
+}
+
+.main-content {
+	transition: all 0.5s ease-in-out;
+	position: relative;
+	padding-left: 60px;
+	padding-top: 25px;
+	width: 100%;
+}
+
+.sub-main-content {
+	transition: all 0.5s ease-in-out;
+	position: relative;
+	padding-left: 175px;
+	padding-top: 25px;
+	width: 100%;
+}
+
+.modal-main-content {
+	transition: all 0.5s ease-in-out;
+	position: relative;
+	padding-left: 150px;
+	padding-top: 25px;
+	width: 100%;
+}
+
+.form-box {
+	background-color: var(--bg-1);
+	height: 80vh;
+	width: 60%;
+	position: relative;
+	margin: auto;
+	border-radius: 15px;
+	padding: 25px;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.modal-top {
+	position: relative;
+	padding: 10px;
+	height: 60px;
+	background: var(--bg-1) !important;
+	overflow: hidden;
+	opacity: .95;
+	/* Ensure children don’t overflow */
+}
+
+.modal-top::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1 !important;
+	/* Ensure it’s below the content */
+}
+
+.modal-top div {
+	position: relative;
+	z-index: 2;
+	/* Ensure it’s above the blurred overlay */
+}
+
+/*---------------------------------/
+    section styles
+/---------------------------------*/
+
+.section-form {
+	border-radius: 15px;
+	padding: 10px;
+	background-color: var(--bg-6-op);
+}
+
+.section-card {
+	border-radius: 15px;
+	background-color: var(--bg-2-op);
+	height: 60vh;
+	width: 95%;
+	padding: 8px;
+	position: relative;
+	margin: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+	box-shadow: inset -6px 6px 12px #141414a1,
+		inset 6px -6px 12px #cacaca8f;
+}
+
+.section-item {
+	border-radius: 8px;
+	padding: 8px;
+	background-color: var(--bg-1);
+	width: 95%;
+	position: relative;
+	margin: auto;
+	margin-top: 10px !important;
+	cursor: pointer;
+	overflow: hidden;
+	box-shadow: 7px -7px 14px #cacaca8f,
+		-7px 7px 14px #141414a1;
+}
+
+.section-item:hover {
+	background-color: var(--bg-3);
+}
+
+
+.section-item-long:hover {
+	background-color: var(--bg-3);
+}
+
+
+.item-collaps {
+	width: 60%;
+}
+
+/*---------------------------------/
+    Alerts styles
+/---------------------------------*/
+
+.alert-notice {
+	padding: 10px;
+	left: 60px;
+	top: 12px;
+	background-color: var(--sc-3);
+	position: absolute;
+	z-index: 99999;
+	height: 46px;
+	width: 90%;
+	transition: all 3s;
+	border-radius: 5px;
+}

@@ -1,0 +1,42 @@
+:root {
+	--bg-7: #E5E5E6;
+	--bg-6: #CACBCE;
+	--bg-5: #96979D;
+	--bg-4: #62636C;
+	--bg-3: #22232C;
+	--bg-2: #16181D;
+	--bg-1: #0B0C0F;
+
+	--lg-7: #F4F3F5;
+	--lg-6: #EAE7EA;
+	--lg-5: #D4CFD5;
+	--lg-4: #AA9EAC;
+	--lg-3: #7F7781;
+	--lg-2: #554F56;
+	--lg-1: #2B282B;
+
+	--mc-7: #E7F7F9;
+	--mc-6: #CFEFF3;
+	--mc-5: #B7E7ED;
+	--mc-4: #9fdfe7;
+	--mc-3: #77A7AD;
+	--mc-2: #506F73;
+	--mc-1: #28383A;
+
+	--sc-7: #DBD3EF;
+	--sc-6: #B8A6DF;
+	--sc-5: #947ACE;
+	--sc-4: #714DBE;
+	--sc-3: #553A8F;
+	--sc-2: #38275F;
+	--sc-1: #1C1330;
+
+	--lg-6-o: #B8A6DF63;
+	--mc-4-o: #9fdfe763;
+	--sc-7-o: #dbd3ef63;
+	--bgop-6: #8287918e;
+
+	--bgcl-body: linear-gradient(72deg, #714dbe, #7858c0, #7e63c2, #856ec4, #8c78c6, #8786cf, #8593d7, #85a0dc, #7db2e4, #7fc2e7, #8bd1e7, #9fdfe7);
+	--bgc2-body: linear-gradient(to left top, #9fdfe7, #65bada, #3c93cc, #3f69b5, #553a8f);
+
+}

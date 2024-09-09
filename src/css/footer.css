@@ -1,0 +1,6 @@
+.footer-css {
+	background-color: var(--bg-6);
+	min-height: 30vh;
+	z-index: 2;
+	position: relative;
+}
