@@ -1,0 +1,1 @@
+.left-slide{transform:translate(-50%);transition:transform .5s}.right-slide{transform:translate(50%);transition:transform .5s}.up-slide{transform:translateY(50px);transition:transform .5s}.fade-slide{opacity:.5;transition:all .5s}.hide{opacity:0}.show{transform:translateY(0);opacity:1}

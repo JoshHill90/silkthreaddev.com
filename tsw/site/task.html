@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="/src/css/main.css">
+	<link rel="stylesheet" href="/src/css/color.css">
+	<link rel="stylesheet" href="/src/css/nav.css">
+	<link rel="stylesheet" href="/src/css/btn.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Silk Thread Dev</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div id="sideNav">
+			<div id="sideNaveRow" class="row text-center">
+				<div class="col-12">
+					<div class="top-nav">
+						<input id="checkbox2" type="checkbox">
+						<label class="toggle-btn toggle toggle2" for="checkbox2">
+							<div id="bar4" class="bars"></div>
+							<div id="bar5" class="bars"></div>
+							<div id="bar6" class="bars"></div>
+						</label>
+					</div>
+				</div>
+
+				<!--        			      		 	-->
+				<!-- 	Dynamic Nav button location 	-->
+				<!--                					-->
+
+			</div>
+			<div id="subNavObj" class="sub-nav">
+
+			</div>
+
+		</div>
+		<div id="mainContent" class="main-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="accordion" id="taskAccordion">
+
+
+							<div id="createTaskCollapse" class="collapse" data-bs-parent="#taskAccordion">
+								<div class="accordion-body">
+
+									<div class="section-card">
+										<h1 class="h1-l">
+											Create New Task
+										</h1>
+										<hr>
+										<form id="taskForm">
+											<div class="row">
+												<div class="col-12 col-md-6">
+													<div class="row">
+														<div class="col-12">
+															<!-- Task Name -->
+															<div class="form-group">
+																<label for="taskName">Task Name</label>
+																<input type="text" class="form-control" id="taskName"
+																	name="taskName" required>
+															</div>
+														</div>
+														<div class="col-12">
+															<!-- Task Type Selection -->
+															<div class="form-group">
+																<label for="taskType">Select Task Type</label>
+																<select class="form-control" id="taskType"
+																	name="taskType" required>
+																	<option value="">Choose...</option>
+																	<option value="email">Email Task</option>
+																	<option value="text">Text Task</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-6">
+															<!-- Task Interval Selection -->
+															<div class="form-group">
+																<label for="taskInterval">Task Interval</label>
+																<select class="form-control" id="taskInterval"
+																	name="taskInterval" required>
+																	<option value="">Select Interval...</option>
+																	<option value="single">Single</option>
+																	<option value="monthly">Monthly</option>
+																	<option value="bi-weekly">Bi-Weekly</option>
+																	<option value="weekly">Weekly</option>
+																	<option value="daily">Daily</option>
+																	<option value="hourly">Hourly</option>
+																	<option value="half_hour">Half an Hour</option>
+																	<option value="quarter_hour">Quarter of an Hour
+																	</option>
+																	<option value="twelfth_hour">Twelfth of an Hour
+																	</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-6">
+															<!-- Task Parameters -->
+															<div class="form-group">
+																<label for="parameters">Add Parameters Interval</label>
+																<select class="form-select" id="parameters">
+																	<option value="count">Counts</option>
+																	<option value="time">Timed</option>
+																	<option value="time">Is True</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-12 col-md-6">
+													<div class="section-details-card mt-2 mb-2">
+														<p class="p-n">
+															Count Parameter
+														</p>
+														<div class="form-group">
+															<label for="parameters">Trigger Number</label>
+															<input id="countParam" type="number" class="form-control">
+														</div>
+													</div>
+
+													<div class="section-details-card mt-2 mb-2">
+														<p class="p-n">
+															Timed Parameter
+														</p>
+														<div class="form-group">
+															<label for="parameters">Time in Hours</label>
+															<input id="timeParam" type="number" class="form-control">
+														</div>
+													</div>
+
+													<div class="section-details-card mt-2 mb-2">
+														<p class="p-n">
+															True/False Parameters
+														</p>
+														<div class="form-group">
+															<label for="parameters">Start as</label>
+															<select class="form-select" id="boolStart">
+																<option value="true">
+																	True
+																</option>
+																<option value="false">
+																	False
+																</option>
+															</select>
+														</div>
+														<div class="form-group">
+															<label for="parameters">Trigger when</label>
+															<select class="form-select" id="boolTrigger">
+																<option value="true">
+																	True
+																</option>
+																<option value="false">
+																	False
+																</option>
+															</select>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-12 col-md-6">
+													<!-- Email Task Fields -->
+													<div class="email-task-fields">
+														<h5>Email Task Details</h5>
+														<div class="form-group">
+															<label for="emailSubject">Subject</label>
+															<input type="text" class="form-control" id="emailSubject"
+																name="emailSubject">
+														</div>
+														<div class="form-group">
+															<label for="emailBody">Body</label>
+															<textarea class="form-control" id="emailBody"
+																name="emailBody" rows="4"></textarea>
+														</div>
+														<div class="form-group">
+															<label for="emailTemplate">Email Template</label>
+															<select class="form-control" id="emailTemplate"
+																name="emailTemplate">
+																<!-- Assume these options are dynamically populated -->
+																<option value="">Select Template...</option>
+																<option value="template1">Template 1</option>
+																<option value="template2">Template 2</option>
+															</select>
+														</div>
+														<div class="form-group">
+															<label for="emailRecipient">Recipient</label>
+															<input type="email" class="form-control" id="emailRecipient"
+																name="emailRecipient">
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6">
+													<!-- Text Task Fields -->
+													<div class="text-task-fields">
+														<h5>Text Task Details</h5>
+														<div class="form-group">
+															<label for="textSubject">Subject</label>
+															<input type="text" class="form-control" id="textSubject"
+																name="textSubject">
+														</div>
+														<div class="form-group">
+															<label for="textBody">Body</label>
+															<textarea class="form-control" id="textBody" name="textBody"
+																rows="2"></textarea>
+														</div>
+														<div class="form-group">
+															<label for="textRecipient">Recipient</label>
+															<input type="email" class="form-control" id="textRecipient"
+																name="textRecipient">
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+
+											<!-- Submit Button -->
+											<button type="submit" class="btn btn-primary">Create Task</button>
+										</form>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!---                    --->
+	<!--- JavaScript Imports --->
+	<!---                    --->
+
+	<script type="module" src="/src/js/main.js"></script>
+
+</body>
+
+</html>

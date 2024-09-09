@@ -1,0 +1,43 @@
+:root {
+	--mc-1: #f2e5bf;
+	--mc-2: #c99700;
+	--mc-3: #b08400;
+	--mc-4: #997300;
+	--mc-5: #7e5e00;
+	--mc-6: #928560;
+	--mc-7: #898270;
+
+	--mc-4-op: #c9970075;
+	--mc-5-op: #b0840075;
+	--mc-6-op: #92856075;
+
+	--sc-1: #bff2cc;
+	--sc-2: #bfccf2;
+	--sc-3: #f2bfe5;
+	--sc-4: #bff2cc;
+	--sc-5: #bff2e5;
+	--sc-6: #00c997;
+	--sc-7: #bfe5f2;
+
+	--sc-4-op: #005F6D75;
+	--sc-5-op: #003b4475;
+	--sc-6-op: #00242975;
+
+	--bg-1: #E5E5E6;
+	--bg-2: #CACBCE;
+	--bg-3: #B0B1B5;
+	--bg-4: #42434C;
+	--bg-5: #373944;
+	--bg-6: #2D2F3B;
+	--bg-7: #22232C;
+
+	--bg-2-op: #CACBCE75;
+	--bg-6-op: #2D2F3B75;
+	--bg-7-op: #22232C75;
+	--rj-7: #A80000;
+	--ds-7: #5e7c83;
+
+	--tc-7: #db88aa;
+	--bg-gradient-color: linear-gradient(to right top, #090909, #202021, #343437, #4a4a4e, #606167, #72747a, #84888d, #979ca1, #aab0b3, #bec4c6, #d3d8d9, #e8ecec);
+	--bg-gradient-color-dk: linear-gradient(to right top, #090909, #202021, #343437, #4a4a4e, #606167, #72747a, #84888d, #979ca1, #aab0b3, #bec4c6, #d3d8d9, #e8ecec);
+}

@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/src/css/main.css">
+  <link rel="stylesheet" href="/src/css/color.css">
+  <link rel="stylesheet" href="/src/css/nav.css">
+  <link rel="stylesheet" href="/src/css/btn.css">
+  <link rel="stylesheet" href="/src/css/animation.css">
+  <link rel="stylesheet" href="/src/css/loading.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Silk Thread Dev</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div id="sideNav">
+      <div id="sideNaveRow" class="row text-center">
+        <div class="col-12">
+          <div class="top-nav">
+            <input id="checkbox2" type="checkbox">
+            <label class="toggle-btn toggle toggle2" for="checkbox2">
+              <div id="bar4" class="bars"></div>
+              <div id="bar5" class="bars"></div>
+              <div id="bar6" class="bars"></div>
+            </label>
+          </div>
+        </div>
+
+        <!--        			      		 	-->
+        <!-- 	Dynamic Nav button location 	-->
+        <!--                					-->
+
+      </div>
+
+    </div>
+    <div id="semicircle" class="semicircle">
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mainContent" class="main-content hide">
+      <div class="container-flud">
+        <div class="row">
+          <div class="col-12 mb-4">
+            <h1>Silk Thread Development</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-flud">
+        <div class="row">
+          <div class="col-12 mt-4 mb-4">
+            <div class="section-card">
+              <form>
+                <!-- Input fields -->
+                <div class="row">
+                  <div class="col-12 mt-4 mb-4">
+                    <h1>Project Costs</h1>
+                  </div>
+
+                  <div class="col-6 mt-4 mb-4">
+
+                    <div class="form-group">
+                      <label for="arv">ARV</label>
+                      <input type="number" step="0.01" class="form-control" id="arv" value="0.00" placeholder="0.00">
+                    </div>
+                  </div>
+                  <div class="col-6 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="purchase_price">Purchase Price</label>
+                      <input type="number" step="0.01" class="form-control" id="purchase_price" value="0.00"
+                        placeholder="0.00">
+                    </div>
+                  </div>
+                  <div class="col-6 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="rehab_budget">Rehab Budget</label>
+                      <input type="number" step="0.01" class="form-control" id="rehab_budget" value="0.00"
+                        placeholder="0.00">
+                    </div>
+                  </div>
+                  <div class="col-6 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="closing_cost">Closing Cost</label>
+                      <input type="number" step="0.01" class="form-control" id="closing_cost" value="0.00"
+                        placeholder="0.00">
+                    </div>
+                  </div>
+                  <div class="col-6 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="holding_cost">Holding Cost</label>
+                      <input type="number" step="0.01" class="form-control" id="holding_cost" value="0.00"
+                        placeholder="0.00">
+                    </div>
+                  </div>
+                  <div class="col-12 mt-4 mb-4">
+                    <h1>HML Breakdown</h1>
+                  </div>
+                  <div class="col-4 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="hml_ltv">HML LTV (%)</label>
+                      <input type="number" step="0.01" class="form-control" id="hml_ltv" value="0.00"
+                        placeholder="0.00">
+                    </div>
+                  </div>
+                  <div class="col-4 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="hml_points">HML Points (%)</label>
+                      <input type="number" step="0.01" class="form-control" id="hml_points" value="0.00"
+                        placeholder="0.00">
+                    </div>
+                  </div>
+                  <div class="col-4 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="hml_interest_rate">HML Interest Rate (%)</label>
+                      <input type="number" step="0.01" class="form-control" id="hml_interest_rate" value="0.00"
+                        placeholder="0.00">
+                    </div>
+                  </div>
+                  <div class="col-12 mt-4 mb-4">
+                    <h1>GAP Breakdown</h1>
+                  </div>
+                  <div class="col-4 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="gap_points">GAP Points (%)</label>
+                      <input type="number" step="0.01" class="form-control" id="gap_points" value="0.00"
+                        placeholder="0.00">
+                    </div>
+                  </div>
+                  <div class="col-4 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="gap_interest_rate">GAP Interest Rate (%)</label>
+                      <input type="number" step="0.01" class="form-control" id="gap_interest_rate" value="0.00"
+                        placeholder="0.00">
+                    </div>
+                  </div>
+                  <div class="col-4 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="interest_type">Interest Type</label>
+                      <select class="form-control" id="interest_type">
+                        <option value="annual">Annual</option>
+                        <option value="monthly">Monthly</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-4 mb-4">
+                    <h1>Project Variables</h1>
+                  </div>
+                  <div class="col-4 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="project_in_months">Project Duration (Months)</label>
+                      <input type="number" class="form-control" id="project_in_months" value="0.00" placeholder="0">
+                    </div>
+                  </div>
+                  <div class="col-4 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="commission">Commission (%)</label>
+                      <input type="number" step="0.01" class="form-control" id="commission" value="0.00"
+                        placeholder="0.00">
+                    </div>
+                  </div>
+                  <div class="col-4 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="commission">Resale Closing (%)</label>
+                      <input type="number" step="0.01" class="form-control" id="resale_closing_cost" value="0.00"
+                        placeholder="0.00">
+                    </div>
+                  </div>
+                  <div class="col-4 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="profit_min">Minimum Profit</label>
+                      <input type="number" step="0.01" class="form-control" id="profit_min" value="0.00"
+                        placeholder="0.00">
+                    </div>
+                  </div>
+                  <div class="col-4 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="admin_fee">Admin Fee</label>
+                      <input type="number" step="0.01" class="form-control" id="admin_fee" value="0.00"
+                        placeholder="0.00">
+                    </div>
+                  </div>
+
+                  <div class="col-4 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="gap_equity_share">GAP Equity Share</label>
+                      <select class="form-control" id="gap_equity_share">
+                        <option value="False">No</option>
+                        <option value="True">Yes</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-4 mt-4 mb-4">
+                    <div class="form-group">
+                      <label for="gap_equity">GAP Equity (%)</label>
+                      <input type="number" step="0.01" class="form-control" id="gap_equity" value="0.00"
+                        placeholder="0.00">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-12 text-center mt-4 mb-4">
+            <button id="calc" class="btn-cust-1">
+              <h1 class="h1-l">Calculate</h1>
+            </button>
+          </div>
+          <div class="row">
+            <div id="breakdown" class="col-12 hide">
+              <div class="row">
+                <div class="col-12 mt-4 mb-4">
+                  <h1 class="h1-l">
+                    Flip Breakdown
+                  </h1>
+                </div>
+
+                <!--            -->
+                <!--            -->
+                <!--            -->
+                <div class="col-12 col-md-4 mt-4 mb-2">
+                  <div class="col-12">
+                    <div class="section-card-2 text-center">
+                      <h1 class="h1-l">
+                        Deal Status
+                      </h1>
+                      <h1 id="add_deal" class="h1-b-3">
+
+                      </h1>
+                      <button class="btn-cust-1 mb-4">
+                        <h1 class="h1-b">Track Project</h1>
+                      </button>
+                    </div>
+                    <div class="col-12 mt-4">
+                      <div class="section-card-2 mt-3 mb-3 ">
+                        <h1 class="h1-l">
+                          TCP
+                        </h1>
+                        <p class="p-l">TCP Plus Cost</p>
+                        <h1 id="tcp_plus_cost" class="h1-b-2">
+
+                        </h1>
+                        <p class="p-l">TCP as a % Percentage</p>
+                        <p id="tcp_as_percent" class="p-b">
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 col-12 mt-4 mb-4">
+                  <div class="row">
+                    <div class="col-12 col-md-6 mb-2">
+                      <div class="section-card-2 mt-3 mb-3 ">
+                        <h1 class="h1-l">
+                          Profit Projection
+                        </h1>
+                        <p class="p-l">Profit Minimal</p>
+                        <p id="add_profit_min" class="p-b">
+
+                        </p>
+                        <p class="p-l">Projection</p>
+                        <h1 id="add_projection" class="h1-b-2">
+
+                        </h1>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 mb-2">
+                      <div class="section-card-2 mt-3 mb-3 ">
+                        <h1 class="h1-l">
+                          Total Poject Cost
+                        </h1>
+                        <h1 id="total_project_cost" class="h1-b-3">
+
+                        </h1>
+                        <p class="p-l">Down Payment</p>
+                        <p id="gap_down_payment" class="p-b">
+
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-2">
+                      <div class="chart"><canvas id="dealBreakdown"></canvas></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mt-4 mb-4">
+                  <div class="row">
+                    <div class="col-12 col-md-4 order-md-2">
+                      <div class="section-card-2 mt-3 mb-3 ">
+                        <h1 class="h1-l">
+                          Resale Index
+                        </h1>
+                        <div class="row">
+                          <div class="col-4">
+                            Resale Price
+                          </div>
+                          <div class="col-4">
+                            Minus CC
+                          </div>
+                          <div class="col-4">
+                            Profit
+                          </div>
+                        </div>
+                        <div id="resale_index">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-8 order-md-1">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="chart">
+                            <canvas id="resaleIndexBreakdown"></canvas>
+                          </div>
+
+                        </div>
+                        <div class="col-12 mt-4 col-md-6">
+                          <div class="section-card-2 mt-3 mb-3 ">
+                            <h1 class="h1-l">
+                              HML Brakedown
+                            </h1>
+                            <p class="p-l">HML Loan Amount</p>
+                            <p id="hml_loan_amount" class="p-b">
+
+                            </p>
+                            <p class="p-l">HML Points Total</p>
+                            <p id="hml_pints_total" class="p-b">
+
+                            </p>
+                            <p class="p-l">HML Interest Total</p>
+                            <p id="hml_interest_total" class="p-b">
+
+                            </p>
+                            <p class="p-l">HML Total Fees</p>
+                            <p id="gap_total_hml_fees" class="p-b">
+
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-12 mt-4 col-md-6">
+                          <div class="section-card-2 mt-3 mb-3 ">
+                            <h1 class="h1-l">
+                              Gap Brakedown
+                            </h1>
+                            <p class="p-l">Gap Loan Amount</p>
+                            <p id="gap_loan_amount" class="p-b">
+
+                            </p>
+                            <p class="p-l">Gap Points Total</p>
+                            <p id="gap_point_total" class="p-b">
+
+                            </p>
+                            <p class="p-l">Gap Interest Total</p>
+                            <p id="gap_interest_total" class="p-b">
+
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-md-4 col-12">
+                  <div class="row">
+                    <div class="col-12 mt-4 mb-4">
+                      <div class="section-card-2 mt-3 mb-3 ">
+                        <h1 class="h1-l">
+                          Gap Shares
+                        </h1>
+                        <p class="p-l">Share Return</p>
+                        <p id="gap_share_return" class="p-b">
+
+                        </p>
+                        <p class="p-l">Share ROI</p>
+                        <p id="gap_share_roi" class="p-b">
+
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-4 mb-4">
+                      <div class="section-card-2 mt-3 mb-3 ">
+                        <h1 class="h1-l">
+                          Addtional Points
+                        </h1>
+                        <p class="p-l">ROI</p>
+                        <p id="add_roi" class="p-b">
+
+                        </p>
+                        <p class="p-l">Breakeven Price</p>
+                        <p id="add_breakeven_price" class="p-b">
+
+                        </p>
+                        <p class="p-l">Payback Period</p>
+                        <p id="add_payback_period" class="p-b">
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-md-4 col-12 mt-4 mb-4">
+                  <div class="chart">
+                    <canvas id="totalProjectCost"></canvas>
+                  </div>
+
+                </div>
+                <div class="col-md-4 col-12 mt-4 mb-4">
+                  <div class="section-card-2 mt-3 mb-3 ">
+                    <h1 class="h1-l">
+                      Testing
+                    </h1>
+                    <p class="p-l">DSCR</p>
+                    <p id="add_dscr" class="p-b">
+
+                    </p>
+                    <p class="p-l">Sensitivity ARV Down</p>
+                    <p id="add_sensitivity_arv_down" class="p-b">
+
+                    </p>
+                    <p class="p-l">Sensitivity Resale Price</p>
+                    <p id="add_sensitivity_resale_price" class="p-b">
+
+                    </p>
+                    <p class="p-l">Stress Test</p>
+                    <p id="add_stress_test_result" class="p-b">
+
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---                    --->
+  <!--- JavaScript Imports --->
+  <!---                    --->
+
+  <script type="module" src="/src/js/main.js"></script>
+
+</body>
+
+</html>

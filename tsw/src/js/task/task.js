@@ -1,0 +1,10 @@
+
+class TaskManager {
+	constructor() {
+
+	}
+
+	init() {
+
+	}
+}
