@@ -38,6 +38,9 @@
 	--ds-7: #5e7c83;
 
 	--tc-7: #db88aa;
+	--tc-6: #0054a8;
+	--tc-5: #a80054;
+	--tc-4: #a800a8;
 	--bg-gradient-color: linear-gradient(to right bottom, #00a8a8, #46aebb, #70b4c8, #93bace, #afc0d0, #aab8cc, #a6b0c7, #a3a8c2, #8a8db8, #7572ac, #63579f, #553a8f);
 	--bg-gradient-color-dk: linear-gradient(to right bottom, #00a8a8, #46aebb, #70b4c8, #93bace, #afc0d0, #aab8cc, #a6b0c7, #a3a8c2, #8a8db8, #7572ac, #63579f, #553a8f);
 }

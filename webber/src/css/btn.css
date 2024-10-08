@@ -40,6 +40,27 @@
 	text-decoration: none;
 }
 
+.btn-cust-3 {
+	background: var(--rj-7);
+
+	border-radius: 13px;
+	box-shadow: 2px 4px 16px var(--bg-6-op);
+	color: var(--bg-1);
+	min-width: 150px;
+	border: none;
+	margin-top: 25px;
+	font-size: 16px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.btn-cust-3:hover {
+	color: var(--bg-1);
+	background: var(--bg-5);
+
+	text-decoration: none;
+}
+
 .btn-cust-icon {
 	border-radius: 13px;
 	box-shadow: 2px 1px 6px var(--bg-6-op);
@@ -49,6 +70,18 @@
 	position: relative;
 	left: 90%;
 	margin-top: 25px;
+	font-size: 16px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.btn-cust-icon-2 {
+	border-radius: 13px;
+	box-shadow: 2px 1px 6px var(--bg-6-op);
+	color: var(--bg-2);
+	background: var(--mc-5);
+	border: none;
+	position: relative;
 	font-size: 16px;
 	padding: 10px;
 	text-decoration: none;

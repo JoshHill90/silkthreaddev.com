@@ -1,0 +1,85 @@
+.task {
+	padding: 25px 15px;
+	border-radius: 8px;
+	margin: 15px;
+	min-width: 160px;
+	position: relative;
+}
+
+.task::after {
+	content: "";
+	border-radius: 8px 8px 0 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-top: 16px solid var(--bg-6);
+}
+
+.task-count {
+	background-color: var(--tc-4);
+}
+
+.task-timed {
+	background-color: var(--tc-6);
+}
+
+.task-bool {
+	background-color: var(--tc-5);
+}
+
+.task-pare {
+	background-color: var(--sc-2);
+	min-width: 200px !important;
+}
+
+.btn-task {
+	background: var(--bg-5);
+	border-radius: 8px;
+	box-shadow: 2px 2px 6px var(--bg-6-op);
+	color: var(--bg-1);
+	border: none;
+	font-size: 10px;
+	padding: 5px;
+	text-decoration: none;
+}
+
+.btn-task:hover {
+	color: var(--bg-2);
+	background: var(--bg-1);
+}
+
+.task-card {
+	background: var(--bg-2);
+
+	padding: 20px;
+	margin: 10px 0;
+	border-radius: 8px;
+	width: 100%;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-card h1 {
+	font-size: 26px !important;
+	color: var(--mc-6) !important;
+}
+
+.active-task {
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid;
+	border-color: var(--mc-3);
+	box-shadow: 0px 0px 5px 4px var(--mc-5);
+	background-color: var(--mc-2);
+}
+
+.inactive-task {
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid;
+	border-color: var(--bg-3);
+	box-shadow: 0px 0px 5px 4px var(--bg-5);
+	background-color: var(--bg-2);
+}

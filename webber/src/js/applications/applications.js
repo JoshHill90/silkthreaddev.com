@@ -2,6 +2,7 @@ import { apiURL } from "../main";
 import { coockieCheck } from "../auth/cookies";
 import SettingsAPI from "../settings/api/settingsAPI";
 import AppComp from "./subcomp/appComp";
+import { pageLoader } from "../loader/loader";
 class AppManager {
 	constructor() {
 		this.apiURL = null
@@ -16,12 +17,14 @@ class AppManager {
 
 class AppPage {
 	constructor() {
+		this.pageLoader = new pageLoader()
 		this.manager = new AppManager()
 		this.api = new SettingsAPI(this.manager)
 		this.comp = new AppComp(this.manager)
 	}
 
 	async init() {
+		this.pageLoader.init()
 		try {
 			this.manager.apiURL = apiURL
 			this.manager.cookie = await coockieCheck()
@@ -37,6 +40,7 @@ class AppPage {
 			console.error("An error occurred during initialization:", error);
 
 		}
+		this.pageLoader.hideLoader()
 	}
 
 	checksubscriptions() {

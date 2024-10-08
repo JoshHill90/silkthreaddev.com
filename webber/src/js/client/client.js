@@ -5,7 +5,7 @@ import { ClientAPI } from "./api/clientAPI";
 import { ClientModal } from "./modals/clientModal"
 import DomainsKeysValues from "./modals/sub/domainClient";
 import NewClientForm from "./comp/newClientComp";
-
+import { pageLoader } from "../loader/loader";
 // client objects manager 
 class Client {
 	constructor() {
@@ -24,6 +24,7 @@ class Client {
 
 class ClientManager {
 	constructor() {
+		this.pageLoader = new pageLoader()
 		this.manager = new Client()
 		this.api = new ClientAPI(this.manager)
 		this.newClientForm = new NewClientForm(this.manager, this.api)
@@ -32,6 +33,7 @@ class ClientManager {
 	}
 	// initiate the client page
 	async init() {
+		this.pageLoader.init()
 		//set up api site and cookie
 		this.manager.apiURL = apiURL
 		this.manager.cookie = defaultGetCookie()
@@ -46,6 +48,7 @@ class ClientManager {
 		this.modal.init()
 		// set listeners for the page
 		this.listeners()
+		this.pageLoader.hideLoader()
 	}
 
 	listeners() {

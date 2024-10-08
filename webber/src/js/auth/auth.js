@@ -3,7 +3,7 @@ import { AuthForms } from './authInputs';
 import { UserAuth } from '../api/auth/userAuth';
 import { ClientsBtn, SubscriptionsBtn, ProductsBtn, SettingsBtn, ApplicationsBtn, AutomationBtn } from '../sideNavComp/navButtons/groupbuttons';
 import { BillingBtn } from '../sideNavComp/navButtons/subscriptionBtn';
-
+import { pageLoader } from '../loader/loader';
 class Auth {
 	constructor() {
 		this.userInput = null
@@ -17,6 +17,7 @@ export class Security {
 
 	constructor(Manager, Nav) {
 		this.manager = Manager
+		this.pageLoader = new pageLoader()
 		this.auth = new Auth()
 		this.nav = Nav
 		this.userAuth = new UserAuth(this.manager, this.auth)
@@ -24,6 +25,7 @@ export class Security {
 	}
 
 	async init() {
+		this.pageLoader.init()
 		//console.log("Login Button")
 		const cookie = await coockieCheck()
 		//console.log("cookie", cookie)
@@ -35,8 +37,8 @@ export class Security {
 			await this.authValidation()
 			await this.authGroupCheck()
 		}
-		return
 
+		return
 	}
 
 	authStop() {

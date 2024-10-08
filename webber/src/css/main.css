@@ -78,11 +78,20 @@
 	font-variation-settings: "wdth" 100;
 }
 
+.p-nl {
+	color: var(--sc-1);
+	font-size: 16px;
+	/* Added a default font size */
+	font-weight: 330;
+	font-style: light;
+	font-variation-settings: "wdth" 100;
+}
+
 .p-n {
 	color: var(--mc-7);
 	font-size: 16px;
 	/* Added a default font size */
-	font-weight: 550;
+	font-weight: 400;
 	font-style: normal;
 	font-variation-settings: "wdth" 100;
 }
@@ -101,6 +110,15 @@
 	font-size: 16px;
 	/* Added a default font size */
 	font-weight: 550;
+	font-style: bold;
+	font-variation-settings: "wdth" 110;
+}
+
+.p-title {
+	color: var(--bg-7);
+	font-size: 20px;
+	/* Added a default font size */
+	font-weight: 400;
 	font-style: bold;
 	font-variation-settings: "wdth" 110;
 }
@@ -214,7 +232,7 @@ body {
 .section-card {
 	border-radius: 15px;
 	background-color: var(--bg-2-op);
-	height: 60vh;
+	min-height: 60vh;
 	width: 95%;
 	padding: 8px;
 	position: relative;
@@ -251,6 +269,32 @@ body {
 
 .item-collaps {
 	width: 60%;
+}
+
+.section-details-card {
+	background-color: var(--bg-6-op);
+	padding: 15px;
+	margin: 15px;
+	border-radius: 15px;
+	min-height: 30vh;
+}
+
+.section-details-min {
+	background-color: var(--bg-6-op);
+	padding: 15px;
+	margin: 15px;
+	border-radius: 15px;
+	min-height: 30vh;
+	max-height: 60vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.section-details-card-2 {
+	background-color: var(--bg-2-op);
+	padding: 15px;
+	margin: 15px;
+	border-radius: 15px;
 }
 
 /*---------------------------------/

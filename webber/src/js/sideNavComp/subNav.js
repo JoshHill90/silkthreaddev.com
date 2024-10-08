@@ -1,5 +1,5 @@
 
-import { addDomainBtn, ClientCreateBtn, CreateTaskBtn } from "./subNavBtn/subNavBtn"
+import { addDomainBtn, ClientCreateBtn, CreateTaskBtn, CreateEmailListBtn, CreatePhoneListBtn, UploadTemplateBtn, SendEmailListBtb } from "./subNavBtn/subNavBtn"
 
 export class SubNav {
 	constructor(Nav) {
@@ -68,8 +68,20 @@ export class SubNav {
 				// new task
 				const newTaskBtn = CreateTaskBtn()
 				this.subNavToggleClose(newTaskBtn)
+				// new contact list
+				const newEmailListBtn = CreateEmailListBtn()
+				this.subNavToggleClose(newEmailListBtn)
+				// upload emial template btn 
+				const uploadTemplateBtn = UploadTemplateBtn()
+				this.subNavToggleClose(uploadTemplateBtn)
+				// upload and view sender email list
+				const sendEmailListBtb = SendEmailListBtb()
+				this.subNavToggleClose(sendEmailListBtb)
 				// append buttons
 				this.subNavRow.appendChild(newTaskBtn)
+				this.subNavRow.appendChild(newEmailListBtn)
+				this.subNavRow.appendChild(sendEmailListBtb)
+				this.subNavRow.appendChild(uploadTemplateBtn)
 			}
 		}
 	}
